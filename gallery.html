@@ -118,7 +118,7 @@ From the historic charm of Fisher Park to the friendly streets of Lindley Park, 
 </div>
 </div>
 <div class="flex-1 w-full h-[500px] rounded-3xl overflow-hidden shadow-xl relative group">
-<img alt="A lush, professionally landscaped backyard in a Greensboro historic neighborhood featuring a stone patio and golden hour lighting." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfQhAt6tVEZk8sFuo90T26vhQ3hCd7vkyRObuLjuWD7PW4R42bmNQo9D0NWlQZbU0SzY_CdTXiE6Am2euNm5CapmCCD43A25Q3v4SktXGuDVVCtizZvUETziToXn0yMyLmxYDmtoSY4WvnXyuy6YRx3IPAnh-kujXI5-1VO007OLt0VL4EhllCvxSccRnw5WxFRKpC6-MHidCIq61W1NCd1lhMAOK_qXOx3QUOeXCRhUVdRLikeQ8"/>
+<img alt="A lush, professionally landscaped backyard in a Greensboro historic neighborhood featuring a stone patio and golden hour lighting." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="images/gallery-hero.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-60"></div>
 <div class="absolute bottom-8 left-8 text-white">
 <p class="font-label-md text-label-md opacity-90">Fisher Park Project</p>
@@ -129,42 +129,42 @@ From the historic charm of Fisher Park to the friendly streets of Lindley Park, 
 </section>
 <!-- Category Filter Chips -->
 <section class="px-margin-mobile md:px-margin-desktop py-md">
-<div class="max-w-7xl mx-auto flex flex-wrap gap-3 justify-center">
-<button class="px-6 py-2 rounded-full bg-primary text-white font-label-md text-label-md shadow-sm">All Work</button>
-<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-primary-fixed transition-colors font-label-md text-label-md">Cozy Backyards</button>
-<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-primary-fixed transition-colors font-label-md text-label-md">Friendly Curb Appeal</button>
-<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-primary-fixed transition-colors font-label-md text-label-md">Local Hardscapes</button>
+<div class="max-w-7xl mx-auto flex flex-wrap gap-3 justify-center" id="filter-bar">
+<button class="filter-btn px-6 py-2 rounded-full bg-primary text-white font-label-md text-label-md shadow-sm transition-colors" data-filter="all">All Work</button>
+<button class="filter-btn px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-primary-fixed transition-colors font-label-md text-label-md" data-filter="cozy-backyards">Cozy Backyards</button>
+<button class="filter-btn px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-primary-fixed transition-colors font-label-md text-label-md" data-filter="friendly-curb-appeal">Friendly Curb Appeal</button>
+<button class="filter-btn px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-primary-fixed transition-colors font-label-md text-label-md" data-filter="local-hardscapes">Local Hardscapes</button>
 </div>
 </section>
 <!-- Bento Project Gallery -->
 <section class="px-margin-mobile md:px-margin-desktop py-lg" id="gallery-grid">
 <div class="max-w-7xl mx-auto bento-grid">
-<div class="bento-item bento-item-8 group relative rounded-3xl overflow-hidden h-[400px]">
-<img alt="A transformed backyard in Lindley Park Greensboro featuring fresh dark mulch and manicured lawns." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALdx3Cj5R6XqbvJNYAVZtZCFWG1kcxmQrrlgEAtQ-_BiJ0pxGyv6kF1vYkoz3o0Z9F4Sy2bBMPkjnkVcExP1Pb7LkC5jIQIDE8w49_eDoY1w19HE2orJ-P2s8vENZY8B28aecSoOSVa2X9BI0EfSkZvAbggDLk5dyNiLKuFVEw30zkO6GBWYHY007NEqaeeR9HsE7lwv1Ay_5A6sL8Z2R3xz6aKABTxGP-bsLNKW7Y_VQ47sF0hxg"/>
+<div class="bento-item bento-item-8 group relative rounded-3xl overflow-hidden h-[400px]" data-category="friendly-curb-appeal">
+<img alt="A transformed backyard in Lindley Park Greensboro featuring fresh dark mulch and manicured lawns." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images/gallery-project-1-mulch.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8 text-white">
 <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed mb-2">Friendly Curb Appeal</span>
 <h4 class="font-headline-md text-headline-md mb-2">Fresh mulch for a Lindley Park garden</h4>
 <p class="font-body-md text-body-md text-white/80">Revitalizing a traditional family front yard with native plantings and seasonal updates.</p>
 </div>
 </div>
-<div class="bento-item bento-item-4 group relative rounded-3xl overflow-hidden h-[400px]">
-<img alt="A close-up shot of high-quality stonework for a Greensboro patio with creeping thyme in the crevices." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZa1vogaKC8NTHaWUJcwTUsVUX1CUVoVBJvNTtEwh5X67AVy0g6q_lgP7j2Cpj1LTcCYeC6ud8laOl7egBJZYyjIZ0z0DFncoEkBG6toXXmuj4xGXoLacpAAS3q_NMVEynA8hnvyNuWmKeVbtXoEUdwAXHKk5IJ__9-glq4q-WOFeIq0XTd-xPkd2MrL8635qNrJ47SGTqbRDms46AS2Jqr5xoOlkn7zInwTdpP_hP-lgShZXZb7A"/>
+<div class="bento-item bento-item-4 group relative rounded-3xl overflow-hidden h-[400px]" data-category="local-hardscapes">
+<img alt="A close-up shot of high-quality stonework for a Greensboro patio with creeping thyme in the crevices." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images/gallery-project-2-stonework.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8 text-white">
 <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed mb-2">Local Hardscapes</span>
 <h4 class="font-headline-md text-headline-md mb-2">Latham Park Walkway</h4>
 <p class="font-body-md text-body-md text-white/80">Hand-laid stone paths that feel like they've always been there.</p>
 </div>
 </div>
-<div class="bento-item bento-item-6 group relative rounded-3xl overflow-hidden h-[500px]">
-<img alt="A transformation of a small urban backyard in Fisher Park with a cozy fire pit seating area." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5ECUhV7G9UdyQ_6hwHvIeMp69N1jEDDiyi9HtCo7_9T0QeySxbEi3FyA6--rM_0XwxGQU9xA9d0PvPugg8ed3tGrR9ZE4ChD7jCfVrrBrNOvyZpl5alq8NJs_v7RFI_-utUjhTV77JmiPsF_YrhSSlgjHjLuES2KwWFKThQUGLv05pdh5_54gPjic4ECZA2ZNy_dufymJJ9Ihca8uzBlbWs9ejE7MOTPBfudnMVjj_X3I8Zwb9Ko"/>
+<div class="bento-item bento-item-6 group relative rounded-3xl overflow-hidden h-[500px]" data-category="cozy-backyards">
+<img alt="A transformation of a small urban backyard in Fisher Park with a cozy fire pit seating area." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images/gallery-project-3-firepit.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8 text-white">
 <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed mb-2">Cozy Backyards</span>
 <h4 class="font-headline-md text-headline-md mb-2">A new life for a Fisher Park backyard</h4>
 <p class="font-body-md text-body-md text-white/80">Turning a neglected corner into a private neighborhood oasis.</p>
 </div>
 </div>
-<div class="bento-item bento-item-6 group relative rounded-3xl overflow-hidden h-[500px]">
-<img alt="Landscaping for a large corner lot in Westerwood featuring hydrangeas and NC native grasses." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXniXy4ljWNBFoQ6a4dOOT_MeWF1Ej5RgObgBAgrQggdQJNOaki6sDm-9ND8P6DGqCZ9E1pGFSWVfcPjONHuxv20viZEKxjgKJTHqYLtNnNC0A7CDjC0ND9Qtr7yN3EdOAI3g7liLC5JNskZdTOC5Uo666Js3cn96idZTGoI1HzALyt1g_H1MRUq3LqsJhq7pbXpw5uL-6L6fzDBHpHd9r3DdKG6nBnQPEGSL5ggdtC488eCuanik"/>
+<div class="bento-item bento-item-6 group relative rounded-3xl overflow-hidden h-[500px]" data-category="friendly-curb-appeal">
+<img alt="Landscaping for a large corner lot in Westerwood featuring hydrangeas and NC native grasses." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images/gallery-project-4-corner-lot.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8 text-white">
 <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed mb-2">Friendly Curb Appeal</span>
 <h4 class="font-headline-md text-headline-md mb-2">Westerwood Corner Lot</h4>
@@ -265,6 +265,27 @@ Let's chat about your backyard dreams. No obligation, just neighborly advice and
 document.querySelectorAll('.bento-item').forEach(item => {
   item.addEventListener('mouseenter', () => {});
 });
+
+const filterButtons = document.querySelectorAll('.filter-btn');
+const galleryItems = document.querySelectorAll('.bento-item');
+filterButtons.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const filter = btn.dataset.filter;
+
+    filterButtons.forEach((b) => {
+      b.classList.remove('bg-primary', 'text-white', 'shadow-sm');
+      b.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+    });
+    btn.classList.add('bg-primary', 'text-white', 'shadow-sm');
+    btn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+
+    galleryItems.forEach((item) => {
+      const match = filter === 'all' || item.dataset.category === filter;
+      item.classList.toggle('hidden', !match);
+    });
+  });
+});
+
 window.addEventListener('scroll', () => {
   const nav = document.querySelector('nav');
   if (window.scrollY > 50) {
