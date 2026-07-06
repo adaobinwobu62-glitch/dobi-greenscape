@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | GreenScape Landscaping Greensboro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "surface": "#fbf9f4", "surface-dim": "#dbdad5", "surface-bright": "#fbf9f4",
+        "surface-container-lowest": "#ffffff", "surface-container-low": "#f5f3ee",
+        "surface-container": "#f0eee9", "surface-container-high": "#eae8e3",
+        "surface-container-highest": "#e4e2dd", "on-surface": "#1b1c19",
+        "on-surface-variant": "#42493e", "inverse-surface": "#30312e",
+        "inverse-on-surface": "#f2f1ec", "outline": "#72796e", "outline-variant": "#c2c9bb",
+        "surface-tint": "#3b6934", "primary": "#154212", "on-primary": "#ffffff",
+        "primary-container": "#2d5a27", "on-primary-container": "#9dd090",
+        "inverse-primary": "#a1d494", "secondary": "#805600", "on-secondary": "#ffffff",
+        "secondary-container": "#fdba49", "on-secondary-container": "#704b00",
+        "tertiary": "#64250f", "on-tertiary": "#ffffff", "tertiary-container": "#813b23",
+        "on-tertiary-container": "#ffaf95", "error": "#ba1a1a", "on-error": "#ffffff",
+        "error-container": "#ffdad6", "on-error-container": "#93000a",
+        "primary-fixed": "#bcf0ae", "primary-fixed-dim": "#a1d494",
+        "on-primary-fixed": "#002201", "on-primary-fixed-variant": "#23501e",
+        "secondary-fixed": "#ffddaf", "secondary-fixed-dim": "#fdba49",
+        "on-secondary-fixed": "#281800", "on-secondary-fixed-variant": "#614000",
+        "tertiary-fixed": "#ffdbd0", "tertiary-fixed-dim": "#ffb59d",
+        "on-tertiary-fixed": "#390c00", "on-tertiary-fixed-variant": "#76331b",
+        "background": "#fbf9f4", "on-background": "#1b1c19", "surface-variant": "#e4e2dd"
+      },
+      borderRadius: { "sm": "0.25rem", "DEFAULT": "0.5rem", "md": "0.75rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+      spacing: {
+        "base": "8px", "xs": "4px", "sm": "12px", "md": "24px", "lg": "48px", "xl": "80px",
+        "gutter": "24px", "margin-mobile": "16px", "margin-desktop": "64px", "section-padding": "80px"
+      },
+      fontFamily: {
+        "headline-xl": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"],
+        "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"],
+        "body-lg": ["Be Vietnam Pro"], "body-md": ["Be Vietnam Pro"],
+        "label-md": ["Be Vietnam Pro"], "label-sm": ["Be Vietnam Pro"]
+      },
+      fontSize: {
+        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }]
+      }
+    }
+  }
+}
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+  .warm-shadow { box-shadow: 0 10px 30px -5px rgba(21, 66, 18, 0.1); }
+  .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+  .faq-item.open .faq-answer { max-height: 200px; }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-icon { transition: transform 0.2s ease; }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased">
+<!-- Nav -->
+<nav class="fixed top-0 left-0 w-full flex justify-between items-center px-margin-mobile md:px-margin-desktop py-md max-w-[1280px] mx-auto inset-x-0 bg-surface/90 backdrop-blur-md z-50 shadow-[0_10px_30px_-5px_rgba(21,66,18,0.08)]">
+<a class="flex items-center gap-2" href="index.html">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">park</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">GreenScape</span>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="services.html">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html#about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="gallery.html">Gallery</a>
+<a class="text-primary border-b-2 border-secondary pb-1 font-label-md text-label-md" href="contact.html#faq">FAQ</a>
+</div>
+<a class="hidden md:block bg-secondary-container text-on-secondary-container px-6 py-3 rounded-full font-label-md text-label-md hover:scale-105 transition-transform shadow-sm" href="#contact-form">Get Free Estimate</a>
+<button class="md:hidden text-primary" aria-label="Open menu" id="menu-btn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<div class="hidden fixed top-[72px] left-0 w-full bg-surface z-40 shadow-lg flex-col p-md gap-sm md:hidden" id="mobile-menu">
+<a class="font-label-md text-label-md text-on-surface-variant py-2" href="index.html">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant py-2" href="services.html">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant py-2" href="index.html#about">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant py-2" href="gallery.html">Gallery</a>
+<a class="font-label-md text-label-md text-primary py-2" href="contact.html#faq">FAQ</a>
+<a class="bg-secondary-container text-on-secondary-container text-center px-6 py-3 rounded-full font-label-md text-label-md mt-2" href="#contact-form">Get Free Estimate</a>
+</div>
+<main class="pt-[88px]">
+<!-- Hero + Form Section -->
+<section class="relative py-xl px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<div class="lg:col-span-7 space-y-lg z-10 relative">
+<span class="inline-block font-label-md text-label-md text-secondary bg-secondary-fixed/30 px-sm py-xs rounded-full uppercase tracking-wider">Let's Talk Yards</span>
+<h1 class="font-headline-xl text-[36px] leading-tight md:text-headline-xl text-primary max-w-2xl">Let's Get Your Yard Growing</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+Say hello and tell us about your outdoor space. We'll stop by, take a walk around, and put together a friendly, no-pressure quote.
+</p>
+<!-- Contact Form -->
+<div class="bg-surface-container-lowest p-8 md:p-12 rounded-xl warm-shadow border border-outline-variant/30 mt-lg relative" id="contact-form">
+<form class="space-y-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="space-y-2">
+<label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider">Full Name</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" placeholder="Jane Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider">Phone Number</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" placeholder="(336) 555-0123" type="tel"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider">Email Address</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" placeholder="jane@example.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider">What do you need help with?</label>
+<select class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md">
+<option>Lawn Care</option>
+<option>Yard Design</option>
+<option>Stone &amp; Patios</option>
+<option>Tree &amp; Shrub Care</option>
+<option>Seasonal Tidy-Up</option>
+<option>Something Else</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider">Tell Us About Your Yard</label>
+<textarea class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary p-4 transition-colors font-body-md text-body-md resize-none" placeholder="What's your outdoor space like, and what are you dreaming up?" rows="4"></textarea>
+</div>
+<button class="w-full bg-secondary-container text-on-secondary-container font-label-md text-label-md py-4 rounded-lg hover:scale-[1.01] transition-transform mt-md flex items-center justify-center gap-2" type="submit">
+Send It Over <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+<!-- Contact Sidebar -->
+<div class="lg:col-span-5 space-y-lg lg:pl-gutter pt-lg lg:pt-0">
+<div class="relative w-full h-[300px] rounded-xl overflow-hidden warm-shadow mb-lg">
+<img alt="A cozy Greensboro backyard patio with warm string lighting and lush potted plants at golden hour." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5ECUhV7G9UdyQ_6hwHvIeMp69N1jEDDiyi9HtCo7_9T0QeySxbEi3FyA6--rM_0XwxGQU9xA9d0PvPugg8ed3tGrR9ZE4ChD7jCfVrrBrNOvyZpl5alq8NJs_v7RFI_-utUjhTV77JmiPsF_YrhSSlgjHjLuES2KwWFKThQUGLv05pdh5_54gPjic4ECZA2ZNy_dufymJJ9Ihca8uzBlbWs9ejE7MOTPBfudnMVjj_X3I8Zwb9Ko"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-md">
+<div class="flex items-start gap-4 p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-200">
+<div class="w-10 h-10 rounded-full bg-primary-fixed/40 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-primary mb-1">Phone</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-1">(336) 555-0123</p>
+<p class="text-xs text-outline font-body-md">Mon-Fri, 8am - 6pm EST</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-200">
+<div class="w-10 h-10 rounded-full bg-primary-fixed/40 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-primary mb-1">Email</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-1">hello@greenscapegso.com</p>
+<p class="text-xs text-outline font-body-md">We aim to reply within 24 hours</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-200">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/40 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-primary mb-1">Service Area</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Greensboro, NC and the Triad, including Lindley Park, Fisher Park, and Westerwood.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="bg-surface-container-low py-section-padding px-margin-mobile md:px-margin-desktop" id="faq">
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter items-start">
+<div class="space-y-md">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-lg">Frequently Asked Questions</h2>
+<div class="faq-item border-b border-outline-variant/30 py-4">
+<button class="w-full flex justify-between items-center text-left focus:outline-none group faq-toggle">
+<span class="font-body-lg text-body-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Do you offer free estimates?</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors faq-icon">add</span>
+</button>
+<div class="faq-answer">
+<p class="font-body-md text-body-md text-on-surface-variant pt-3 pr-8">Yes! We'll swing by, walk the yard with you, and put together a free, no-pressure quote.</p>
+</div>
+</div>
+<div class="faq-item border-b border-outline-variant/30 py-4">
+<button class="w-full flex justify-between items-center text-left focus:outline-none group faq-toggle">
+<span class="font-body-lg text-body-lg font-semibold text-on-surface group-hover:text-primary transition-colors">How soon can you start?</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors faq-icon">add</span>
+</button>
+<div class="faq-answer">
+<p class="font-body-md text-body-md text-on-surface-variant pt-3 pr-8">Most routine care starts within a week or two. Bigger design projects usually kick off within a month, depending on the season.</p>
+</div>
+</div>
+<div class="faq-item border-b border-outline-variant/30 py-4">
+<button class="w-full flex justify-between items-center text-left focus:outline-none group faq-toggle">
+<span class="font-body-lg text-body-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Are you licensed and insured in North Carolina?</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors faq-icon">add</span>
+</button>
+<div class="faq-answer">
+<p class="font-body-md text-body-md text-on-surface-variant pt-3 pr-8">Absolutely — we're fully licensed and insured, so you can relax while we take care of your yard.</p>
+</div>
+</div>
+<div class="faq-item border-b border-outline-variant/30 py-4">
+<button class="w-full flex justify-between items-center text-left focus:outline-none group faq-toggle">
+<span class="font-body-lg text-body-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Do you handle both design and ongoing care?</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors faq-icon">add</span>
+</button>
+<div class="faq-answer">
+<p class="font-body-md text-body-md text-on-surface-variant pt-3 pr-8">We do — from a first redesign to the weekly mowing after, we're happy to be your one call for it all.</p>
+</div>
+</div>
+</div>
+<!-- Service Area Map -->
+<div class="h-[400px] lg:h-full min-h-[400px] rounded-xl overflow-hidden warm-shadow relative">
+<img alt="Map area representing Greensboro, North Carolina service region." class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdf1z7EVSVb4GfXVz-BpLHg9ZNtZ8vO-_E1KDwq7pR5xL6AQyyD9bIVNaPgoa4n4rySuno7WBe4LrKOpQaVUSLqTYJ0kzPUwpb02TiIaPSt6bonqOGMLwg8HoNHfQVy3burgXawSkvKR-gHKtK-N5HfBx8Ua53JXZ7Qd3ym726LHlodoJlmpAk-1hOh1TWaOc4wNm3ABpfXzg0DSG_oWlxUyZj06VyAB_UbG8vnDdwN-Auda4oeok"/>
+<div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-sm p-4 rounded-lg border border-outline-variant/30">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<p class="font-label-md text-label-md text-primary">Proudly serving Greensboro, NC and the surrounding Triad.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-16 max-w-[1280px] mx-auto">
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-3xl" style="font-variation-settings: 'FILL' 1;">park</span>
+<span class="font-headline-md text-headline-md font-bold text-on-primary">GreenScape</span>
+</div>
+<p class="font-body-md text-body-md text-on-primary-container">Greensboro's trusted local neighbor for organic, expert landscaping since 2009.</p>
+</div>
+<div>
+<h5 class="font-headline-md text-headline-md mb-6">Services</h5>
+<ul class="space-y-3">
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html">Lawn Care</a></li>
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html">Yard Design</a></li>
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html">Stone &amp; Patios</a></li>
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html">Tree &amp; Shrub Care</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline-md text-headline-md mb-6">Company</h5>
+<ul class="space-y-3">
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="index.html#about">About Us</a></li>
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="gallery.html">Project Gallery</a></li>
+<li><a class="text-secondary-fixed font-bold font-body-md text-body-md" href="contact.html#faq">FAQ</a></li>
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline-md text-headline-md mb-6">Contact</h5>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-on-primary-container font-body-md text-body-md"><span class="material-symbols-outlined text-sm">mail</span> hello@greenscapegso.com</li>
+<li class="flex items-center gap-2 text-on-primary-container font-body-md text-body-md"><span class="material-symbols-outlined text-sm">phone</span> (336) 555-0123</li>
+<li class="flex items-center gap-2 text-on-primary-container font-body-md text-body-md"><span class="material-symbols-outlined text-sm">location_on</span> Greensboro, NC</li>
+</ul>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop py-8 border-t border-outline-variant/10 text-center text-on-primary-container/60 font-label-sm text-label-sm">
+© 2024 GreenScape Landscaping. All rights reserved. Locally owned and operated in Greensboro.
+</div>
+</footer>
+<script>
+document.querySelectorAll(".faq-toggle").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    btn.closest(".faq-item").classList.toggle("open");
+  });
+});
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+if (menuBtn && mobileMenu) {
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    mobileMenu.classList.toggle("flex");
+  });
+}
+</script>
+</body>
+</html>
