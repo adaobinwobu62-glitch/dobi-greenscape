@@ -358,8 +358,25 @@ document.addEventListener("DOMContentLoaded", function () {
     entries.forEach((entry) => {
       if (entry.isIntersecting) entry.target.classList.add("visible");
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.1, rootMargin: "200px 0px" });
   document.querySelectorAll(".fade-in-up").forEach((el) => observer.observe(el));
+
+  // Safety net: instant/programmatic scrolls (End key, scrollbar-thumb jumps,
+  // "reduce motion" browsers forcing non-smooth anchor jumps, screenshot
+  // tools, etc.) can skip past a section without the IntersectionObserver
+  // ever firing for it, leaving it permanently invisible. This sweep forces
+  // anything already near/within the viewport to reveal on any scroll.
+  const revealNearViewport = () => {
+    document.querySelectorAll(".fade-in-up:not(.visible)").forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight + 400 && rect.bottom > -400) {
+        el.classList.add("visible");
+      }
+    });
+  };
+  window.addEventListener("load", revealNearViewport);
+  window.addEventListener("scroll", revealNearViewport, { passive: true });
+  window.addEventListener("hashchange", () => setTimeout(revealNearViewport, 300));
 
   const menuBtn = document.getElementById("menu-btn");
   const menuIcon = document.getElementById("menu-icon");
