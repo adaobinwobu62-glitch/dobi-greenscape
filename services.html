@@ -4,6 +4,14 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Our Services | GreenScape Landscaping Greensboro</title>
+<meta name="description" content="Explore GreenScape's Greensboro landscaping services: lawn care, yard design, stone &amp; patios, and tree &amp; shrub care — tailored to the Piedmont climate."/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Our Services | GreenScape Landscaping Greensboro"/>
+<meta property="og:description" content="Explore GreenScape's Greensboro landscaping services: lawn care, yard design, stone &amp; patios, and tree &amp; shrub care — tailored to the Piedmont climate."/>
+<meta property="og:image" content="https://dobi-greenscape.vercel.app/images/services-hero.jpg"/>
+<meta property="og:url" content="https://dobi-greenscape.vercel.app/services.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%BF%3C/text%3E%3C/svg%3E"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
@@ -65,34 +73,32 @@ tailwind.config = {
   .scale-98:active { transform: scale(0.98); }
 </style>
 </head>
-<body class="bg-background text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed pb-16 md:pb-0">
 <!-- Nav -->
-<header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_10px_30px_-5px_rgba(21,66,18,0.08)] transition-all">
-<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop py-md flex justify-between items-center">
+<nav class="fixed top-0 left-0 w-full flex justify-between items-center px-margin-mobile md:px-margin-desktop py-md max-w-[1280px] mx-auto inset-x-0 bg-surface/90 backdrop-blur-md z-50 shadow-[0_10px_30px_-5px_rgba(21,66,18,0.08)] transition-shadow" id="site-nav">
 <a class="flex items-center gap-2" href="index.html">
 <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">park</span>
 <span class="font-headline-md text-headline-md font-bold text-primary">GreenScape</span>
 </a>
-<nav class="hidden md:flex gap-md items-center">
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a>
-<a class="font-label-md text-label-md text-primary border-b-2 border-secondary pb-1" href="services.html">Services</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="index.html#about">About</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="gallery.html">Gallery</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="contact.html#faq">FAQ</a>
-</nav>
-<a class="hidden md:block bg-secondary-container text-on-secondary-container font-label-md text-label-md px-md py-sm rounded-full shadow-sm hover:scale-102 transition-transform duration-200 active:opacity-100 scale-98 min-h-[48px] flex items-center" href="contact.html">Get Free Estimate</a>
-<button class="md:hidden text-primary" aria-label="Open menu" id="menu-btn">
-<span class="material-symbols-outlined">menu</span>
-</button>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary border-b-2 border-secondary pb-1 font-label-md text-label-md" href="services.html">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html#about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html#testimonials">Testimonials</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="gallery.html">Gallery</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="contact.html#faq">FAQ</a>
 </div>
-</header>
-<div class="hidden fixed top-[80px] left-0 w-full bg-surface z-40 shadow-lg flex-col p-md gap-sm md:hidden" id="mobile-menu">
-<a class="font-label-md text-label-md text-on-surface-variant py-2" href="index.html">Home</a>
+<a class="hidden md:flex items-center bg-secondary-container text-on-secondary-container font-label-md text-label-md px-md py-sm rounded-full shadow-sm hover:scale-102 transition-transform duration-200 active:opacity-100 scale-98 min-h-[48px]" href="contact.html">Get a Free Estimate</a>
+<button class="md:hidden text-primary" aria-label="Toggle menu" aria-expanded="false" id="menu-btn">
+<span class="material-symbols-outlined" id="menu-icon">menu</span>
+</button>
+</nav>
+<div class="hidden fixed top-[76px] left-0 w-full bg-surface z-40 shadow-lg flex-col p-md gap-sm md:hidden" id="mobile-menu">
 <a class="font-label-md text-label-md text-primary py-2" href="services.html">Services</a>
 <a class="font-label-md text-label-md text-on-surface-variant py-2" href="index.html#about">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant py-2" href="index.html#testimonials">Testimonials</a>
 <a class="font-label-md text-label-md text-on-surface-variant py-2" href="gallery.html">Gallery</a>
 <a class="font-label-md text-label-md text-on-surface-variant py-2" href="contact.html#faq">FAQ</a>
-<a class="bg-secondary-container text-on-secondary-container text-center px-6 py-3 rounded-full font-label-md text-label-md mt-2" href="contact.html">Get Free Estimate</a>
+<a class="bg-secondary-container text-on-secondary-container text-center px-6 py-3 rounded-full font-label-md text-label-md mt-2" href="contact.html">Get a Free Estimate</a>
 </div>
 <main class="pt-[88px]">
 <!-- Hero Section -->
@@ -106,7 +112,7 @@ We aren't just landscapers; we're your Greensboro neighbors. From Lindley Park t
 </p>
 <div class="flex flex-wrap gap-md">
 <a class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-lg py-md rounded-full shadow-sm hover:scale-102 transition-all min-h-[48px] font-bold inline-flex items-center" href="#service-grid">View Our Services</a>
-<a class="border-2 border-tertiary text-tertiary font-label-md text-label-md px-lg py-md rounded-full hover:bg-tertiary/5 transition-all min-h-[48px] font-bold inline-flex items-center" href="index.html#about">Meet the Team</a>
+<a class="border-2 border-tertiary text-tertiary font-label-md text-label-md px-lg py-md rounded-full hover:bg-tertiary/5 transition-all min-h-[48px] font-bold inline-flex items-center" href="index.html#team">Meet the Team</a>
 </div>
 </div>
 <div class="relative h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-xl">
@@ -126,7 +132,7 @@ Whether you need a weekly trim or a complete garden transformation, we bring exp
 </p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-<div class="bg-surface p-md rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow group">
+<div class="bg-surface p-md rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow group scroll-mt-24" id="lawn-care">
 <div class="w-12 h-12 bg-primary-fixed/40 rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined text-primary text-[32px]">grass</span>
 </div>
@@ -139,7 +145,7 @@ Expert mowing, edging, and fertilization specifically timed for North Carolina's
 <li class="flex items-center gap-xs font-label-md text-label-md text-on-surface"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> Seasonal Feeding</li>
 </ul>
 </div>
-<div class="bg-surface p-md rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow group">
+<div class="bg-surface p-md rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow group scroll-mt-24" id="yard-design">
 <div class="w-12 h-12 bg-secondary-fixed/40 rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined text-secondary text-[32px]">format_paint</span>
 </div>
@@ -152,7 +158,7 @@ Collaborative dreaming sessions to turn your vision into a reality, selecting pl
 <li class="flex items-center gap-xs font-label-md text-label-md text-on-surface"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> Native Planting</li>
 </ul>
 </div>
-<div class="bg-surface p-md rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow group">
+<div class="bg-surface p-md rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow group scroll-mt-24" id="stone-patios">
 <div class="w-12 h-12 bg-tertiary-fixed/40 rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined text-tertiary text-[32px]">texture</span>
 </div>
@@ -165,7 +171,7 @@ Creating gathering spots that are Greensboro evening ready—from flagstone path
 <li class="flex items-center gap-xs font-label-md text-label-md text-on-surface"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> Retaining Walls</li>
 </ul>
 </div>
-<div class="bg-surface p-md rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow group">
+<div class="bg-surface p-md rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow group scroll-mt-24" id="tree-shrub-care">
 <div class="w-12 h-12 bg-primary-container/20 rounded-lg flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined text-primary-container text-[32px]">park</span>
 </div>
@@ -238,12 +244,12 @@ Health checks and pruning to keep your oaks, dogwoods, and azaleas healthy throu
 <div class="bg-primary text-on-primary rounded-[2rem] p-lg md:p-xl text-center relative overflow-hidden shadow-2xl">
 <div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
 <div class="relative z-10">
-<h2 class="font-headline-lg text-headline-lg mb-md">Want a Hand with Your Yard?</h2>
+<h2 class="font-headline-lg text-headline-lg mb-md">Ready to Give Your Yard Some Love?</h2>
 <p class="font-body-lg text-body-lg mb-lg opacity-90 max-w-xl mx-auto">
 Let's chat about your outdoor dreams. No pressure, just a friendly walk-through and a transparent quote.
 </p>
 <div class="flex flex-col sm:flex-row gap-md justify-center items-center">
-<a class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-xl py-md rounded-full shadow-lg hover:scale-105 transition-transform min-h-[56px] w-full sm:w-auto font-bold text-lg inline-flex items-center justify-center" href="contact.html">Get My Free Quote</a>
+<a class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-xl py-md rounded-full shadow-lg hover:scale-105 transition-transform min-h-[56px] w-full sm:w-auto font-bold text-lg inline-flex items-center justify-center" href="contact.html">Get a Free Estimate</a>
 <a class="flex items-center gap-xs font-label-md text-label-md hover:underline" href="tel:3365550123">
 <span class="material-symbols-outlined">call</span> Or call us: (336) 555-0123
 </a>
@@ -265,10 +271,10 @@ Your local Greensboro landscaping partners since 2009. We take pride in keeping 
 <div>
 <h4 class="font-label-md text-label-md mb-md">Services</h4>
 <nav class="flex flex-col gap-sm">
-<a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" href="services.html">Lawn Maintenance</a>
-<a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" href="services.html">Garden Design</a>
-<a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" href="services.html">Hardscaping</a>
-<a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" href="services.html">Tree Care</a>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" href="services.html#lawn-care">Lawn Care</a>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" href="services.html#yard-design">Yard Design</a>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" href="services.html#stone-patios">Stone &amp; Patios</a>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" href="services.html#tree-shrub-care">Tree &amp; Shrub Care</a>
 </nav>
 </div>
 <div>
@@ -276,8 +282,8 @@ Your local Greensboro landscaping partners since 2009. We take pride in keeping 
 <nav class="flex flex-col gap-sm">
 <a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" href="index.html#about">About Us</a>
 <a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" href="gallery.html">Project Gallery</a>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" href="index.html#testimonials">Testimonials</a>
 <a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" href="contact.html#faq">FAQ</a>
-<a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" href="contact.html">Contact</a>
 </nav>
 </div>
 <div>
@@ -296,23 +302,51 @@ hello@greenscapegso.com<br/>(336) 555-0123
 </p>
 </div>
 </footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "GreenScape Landscaping",
+  "image": "https://dobi-greenscape.vercel.app/images/services-hero.jpg",
+  "telephone": "+1-336-555-0123",
+  "email": "hello@greenscapegso.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Friendly Ave",
+    "addressLocality": "Greensboro",
+    "addressRegion": "NC",
+    "postalCode": "27401",
+    "addressCountry": "US"
+  },
+  "areaServed": "Greensboro, NC",
+  "url": "https://dobi-greenscape.vercel.app/services.html"
+}
+</script>
+<!-- Sticky mobile call bar -->
+<div class="fixed bottom-0 left-0 w-full z-50 md:hidden bg-surface border-t border-outline-variant/30 shadow-[0_-4px_20px_rgba(21,66,18,0.12)] flex">
+<a class="flex-1 flex items-center justify-center gap-2 py-3 text-primary font-label-md text-label-md border-r border-outline-variant/30" href="tel:3365550123">
+<span class="material-symbols-outlined text-[20px]">call</span> Call Now
+</a>
+<a class="flex-1 flex items-center justify-center gap-2 py-3 bg-secondary-container text-on-secondary-container font-label-md text-label-md" href="contact.html#contact-form">
+<span class="material-symbols-outlined text-[20px]">edit_note</span> Get Quote
+</a>
+</div>
 <script>
-window.addEventListener('scroll', () => {
-  const header = document.querySelector('header');
-  if (window.scrollY > 20) {
-    header.classList.add('py-sm');
-    header.classList.remove('py-md');
-  } else {
-    header.classList.add('py-md');
-    header.classList.remove('py-sm');
-  }
-});
 const menuBtn = document.getElementById("menu-btn");
+const menuIcon = document.getElementById("menu-icon");
 const mobileMenu = document.getElementById("mobile-menu");
 if (menuBtn && mobileMenu) {
   menuBtn.addEventListener("click", () => {
+    const isOpen = mobileMenu.classList.toggle("flex");
     mobileMenu.classList.toggle("hidden");
-    mobileMenu.classList.toggle("flex");
+    menuBtn.setAttribute("aria-expanded", String(isOpen));
+    if (menuIcon) menuIcon.textContent = isOpen ? "close" : "menu";
+  });
+}
+const siteNav = document.getElementById("site-nav");
+if (siteNav) {
+  window.addEventListener("scroll", () => {
+    siteNav.classList.toggle("shadow-md", window.scrollY > 20);
   });
 }
 </script>

@@ -4,6 +4,14 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Contact Us | GreenScape Landscaping Greensboro</title>
+<meta name="description" content="Get a free, no-pressure landscaping estimate from GreenScape — Greensboro's friendly local lawn care and yard design experts."/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Contact Us | GreenScape Landscaping Greensboro"/>
+<meta property="og:description" content="Get a free, no-pressure landscaping estimate from GreenScape — Greensboro's friendly local lawn care and yard design experts."/>
+<meta property="og:image" content="https://dobi-greenscape.vercel.app/images/gallery-project-3-firepit.jpg"/>
+<meta property="og:url" content="https://dobi-greenscape.vercel.app/contact.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%BF%3C/text%3E%3C/svg%3E"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
@@ -68,32 +76,32 @@ tailwind.config = {
   .faq-icon { transition: transform 0.2s ease; }
 </style>
 </head>
-<body class="bg-background text-on-surface font-body-md antialiased">
+<body class="bg-background text-on-surface font-body-md antialiased pb-16 md:pb-0">
 <!-- Nav -->
-<nav class="fixed top-0 left-0 w-full flex justify-between items-center px-margin-mobile md:px-margin-desktop py-md max-w-[1280px] mx-auto inset-x-0 bg-surface/90 backdrop-blur-md z-50 shadow-[0_10px_30px_-5px_rgba(21,66,18,0.08)]">
+<nav class="fixed top-0 left-0 w-full flex justify-between items-center px-margin-mobile md:px-margin-desktop py-md max-w-[1280px] mx-auto inset-x-0 bg-surface/90 backdrop-blur-md z-50 shadow-[0_10px_30px_-5px_rgba(21,66,18,0.08)] transition-shadow" id="site-nav">
 <a class="flex items-center gap-2" href="index.html">
 <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">park</span>
 <span class="font-headline-md text-headline-md font-bold text-primary">GreenScape</span>
 </a>
 <div class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html">Home</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="services.html">Services</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html#about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html#testimonials">Testimonials</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="gallery.html">Gallery</a>
 <a class="text-primary border-b-2 border-secondary pb-1 font-label-md text-label-md" href="contact.html#faq">FAQ</a>
 </div>
-<a class="hidden md:block bg-secondary-container text-on-secondary-container px-6 py-3 rounded-full font-label-md text-label-md hover:scale-105 transition-transform shadow-sm" href="#contact-form">Get Free Estimate</a>
-<button class="md:hidden text-primary" aria-label="Open menu" id="menu-btn">
-<span class="material-symbols-outlined">menu</span>
+<a class="hidden md:flex items-center bg-secondary-container text-on-secondary-container px-6 py-3 rounded-full font-label-md text-label-md hover:scale-105 transition-transform shadow-sm" href="#contact-form">Get a Free Estimate</a>
+<button class="md:hidden text-primary" aria-label="Toggle menu" aria-expanded="false" id="menu-btn">
+<span class="material-symbols-outlined" id="menu-icon">menu</span>
 </button>
 </nav>
-<div class="hidden fixed top-[72px] left-0 w-full bg-surface z-40 shadow-lg flex-col p-md gap-sm md:hidden" id="mobile-menu">
-<a class="font-label-md text-label-md text-on-surface-variant py-2" href="index.html">Home</a>
+<div class="hidden fixed top-[76px] left-0 w-full bg-surface z-40 shadow-lg flex-col p-md gap-sm md:hidden" id="mobile-menu">
 <a class="font-label-md text-label-md text-on-surface-variant py-2" href="services.html">Services</a>
 <a class="font-label-md text-label-md text-on-surface-variant py-2" href="index.html#about">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant py-2" href="index.html#testimonials">Testimonials</a>
 <a class="font-label-md text-label-md text-on-surface-variant py-2" href="gallery.html">Gallery</a>
 <a class="font-label-md text-label-md text-primary py-2" href="contact.html#faq">FAQ</a>
-<a class="bg-secondary-container text-on-secondary-container text-center px-6 py-3 rounded-full font-label-md text-label-md mt-2" href="#contact-form">Get Free Estimate</a>
+<a class="bg-secondary-container text-on-secondary-container text-center px-6 py-3 rounded-full font-label-md text-label-md mt-2" href="#contact-form">Get a Free Estimate</a>
 </div>
 <main class="pt-[88px]">
 <!-- Hero + Form Section -->
@@ -107,24 +115,27 @@ Say hello and tell us about your outdoor space. We'll stop by, take a walk aroun
 </p>
 <!-- Contact Form -->
 <div class="bg-surface-container-lowest p-8 md:p-12 rounded-xl warm-shadow border border-outline-variant/30 mt-lg relative" id="contact-form">
-<form class="space-y-md">
+<form id="quote-form" class="space-y-md" action="https://formsubmit.co/ajax/adaobinwobu62@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New quote request from the GreenScape demo site"/>
+<input type="hidden" name="_template" value="table"/>
+<input type="hidden" name="_captcha" value="false"/>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
 <div class="space-y-2">
 <label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider">Full Name</label>
-<input class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" placeholder="Jane Doe" type="text"/>
+<input required class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" placeholder="Jane Doe" type="text" name="name"/>
 </div>
 <div class="space-y-2">
 <label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider">Phone Number</label>
-<input class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" placeholder="(336) 555-0123" type="tel"/>
+<input class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" placeholder="(336) 555-0123" type="tel" name="phone"/>
 </div>
 </div>
 <div class="space-y-2">
 <label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider">Email Address</label>
-<input class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" placeholder="jane@example.com" type="email"/>
+<input required class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" placeholder="jane@example.com" type="email" name="email"/>
 </div>
 <div class="space-y-2">
 <label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider">What do you need help with?</label>
-<select class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md">
+<select class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" name="service">
 <option>Lawn Care</option>
 <option>Yard Design</option>
 <option>Stone &amp; Patios</option>
@@ -135,11 +146,12 @@ Say hello and tell us about your outdoor space. We'll stop by, take a walk aroun
 </div>
 <div class="space-y-2">
 <label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider">Tell Us About Your Yard</label>
-<textarea class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary p-4 transition-colors font-body-md text-body-md resize-none" placeholder="What's your outdoor space like, and what are you dreaming up?" rows="4"></textarea>
+<textarea class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary p-4 transition-colors font-body-md text-body-md resize-none" placeholder="What's your outdoor space like, and what are you dreaming up?" rows="4" name="message"></textarea>
 </div>
-<button class="w-full bg-secondary-container text-on-secondary-container font-label-md text-label-md py-4 rounded-lg hover:scale-[1.01] transition-transform mt-md flex items-center justify-center gap-2" type="submit">
-Send It Over <span class="material-symbols-outlined text-sm">arrow_forward</span>
+<button class="w-full bg-secondary-container text-on-secondary-container font-label-md text-label-md py-4 rounded-lg hover:scale-[1.01] transition-transform mt-md flex items-center justify-center gap-2" type="submit" id="quote-form-submit">
+<span id="quote-form-submit-label">Send It Over</span> <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </button>
+<p class="text-xs text-outline font-body-md text-center pt-2" id="quote-form-status" role="status"></p>
 </form>
 </div>
 </div>
@@ -250,10 +262,10 @@ Send It Over <span class="material-symbols-outlined text-sm">arrow_forward</span
 <div>
 <h5 class="font-headline-md text-headline-md mb-6">Services</h5>
 <ul class="space-y-3">
-<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html">Lawn Care</a></li>
-<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html">Yard Design</a></li>
-<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html">Stone &amp; Patios</a></li>
-<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html">Tree &amp; Shrub Care</a></li>
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html#lawn-care">Lawn Care</a></li>
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html#yard-design">Yard Design</a></li>
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html#stone-patios">Stone &amp; Patios</a></li>
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html#tree-shrub-care">Tree &amp; Shrub Care</a></li>
 </ul>
 </div>
 <div>
@@ -261,8 +273,8 @@ Send It Over <span class="material-symbols-outlined text-sm">arrow_forward</span
 <ul class="space-y-3">
 <li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="index.html#about">About Us</a></li>
 <li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="gallery.html">Project Gallery</a></li>
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="index.html#testimonials">Testimonials</a></li>
 <li><a class="text-secondary-fixed font-bold font-body-md text-body-md" href="contact.html#faq">FAQ</a></li>
-<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="contact.html">Contact</a></li>
 </ul>
 </div>
 <div>
@@ -278,18 +290,91 @@ Send It Over <span class="material-symbols-outlined text-sm">arrow_forward</span
 © 2024 GreenScape Landscaping. All rights reserved. Locally owned and operated in Greensboro.
 </div>
 </footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "GreenScape Landscaping",
+  "image": "https://dobi-greenscape.vercel.app/images/gallery-project-3-firepit.jpg",
+  "telephone": "+1-336-555-0123",
+  "email": "hello@greenscapegso.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Friendly Ave",
+    "addressLocality": "Greensboro",
+    "addressRegion": "NC",
+    "postalCode": "27401",
+    "addressCountry": "US"
+  },
+  "areaServed": "Greensboro, NC",
+  "url": "https://dobi-greenscape.vercel.app/contact.html"
+}
+</script>
+<!-- Sticky mobile call bar -->
+<div class="fixed bottom-0 left-0 w-full z-50 md:hidden bg-surface border-t border-outline-variant/30 shadow-[0_-4px_20px_rgba(21,66,18,0.12)] flex">
+<a class="flex-1 flex items-center justify-center gap-2 py-3 text-primary font-label-md text-label-md border-r border-outline-variant/30" href="tel:3365550123">
+<span class="material-symbols-outlined text-[20px]">call</span> Call Now
+</a>
+<a class="flex-1 flex items-center justify-center gap-2 py-3 bg-secondary-container text-on-secondary-container font-label-md text-label-md" href="#contact-form">
+<span class="material-symbols-outlined text-[20px]">edit_note</span> Get Quote
+</a>
+</div>
 <script>
 document.querySelectorAll(".faq-toggle").forEach((btn) => {
   btn.addEventListener("click", () => {
     btn.closest(".faq-item").classList.toggle("open");
   });
 });
+
 const menuBtn = document.getElementById("menu-btn");
+const menuIcon = document.getElementById("menu-icon");
 const mobileMenu = document.getElementById("mobile-menu");
 if (menuBtn && mobileMenu) {
   menuBtn.addEventListener("click", () => {
+    const isOpen = mobileMenu.classList.toggle("flex");
     mobileMenu.classList.toggle("hidden");
-    mobileMenu.classList.toggle("flex");
+    menuBtn.setAttribute("aria-expanded", String(isOpen));
+    if (menuIcon) menuIcon.textContent = isOpen ? "close" : "menu";
+  });
+}
+const siteNav = document.getElementById("site-nav");
+if (siteNav) {
+  window.addEventListener("scroll", () => {
+    siteNav.classList.toggle("shadow-md", window.scrollY > 20);
+  });
+}
+
+const quoteForm = document.getElementById("quote-form");
+const quoteFormSubmit = document.getElementById("quote-form-submit");
+const quoteFormSubmitLabel = document.getElementById("quote-form-submit-label");
+const quoteFormStatus = document.getElementById("quote-form-status");
+if (quoteForm) {
+  quoteForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    quoteFormSubmit.disabled = true;
+    quoteFormSubmitLabel.textContent = "Sending…";
+    quoteFormStatus.textContent = "";
+    try {
+      const response = await fetch(quoteForm.action, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(quoteForm),
+      });
+      if (response.ok) {
+        quoteForm.reset();
+        quoteForm.querySelectorAll("input, select, textarea, button").forEach((el) => (el.style.display = "none"));
+        quoteFormStatus.classList.remove("text-outline");
+        quoteFormStatus.classList.add("text-primary", "font-label-md", "text-label-md", "not-italic");
+        quoteFormStatus.textContent = "Thanks! Your request is on its way — we'll be in touch soon.";
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (err) {
+      quoteFormSubmit.disabled = false;
+      quoteFormSubmitLabel.textContent = "Send It Over";
+      quoteFormStatus.classList.add("text-error");
+      quoteFormStatus.textContent = "Something went wrong — please call or email us directly instead.";
+    }
   });
 }
 </script>

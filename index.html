@@ -4,6 +4,14 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>GreenScape Landscaping - Greensboro's Friendly Landscape Experts</title>
+<meta name="description" content="Friendly, expert landscaping for Greensboro, NC — lawn care, yard design, hardscaping, and seasonal cleanups from a local team that treats your yard like their own."/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="GreenScape Landscaping - Greensboro's Friendly Landscape Experts"/>
+<meta property="og:description" content="Friendly, expert landscaping for Greensboro, NC — lawn care, yard design, hardscaping, and seasonal cleanups from a local team that treats your yard like their own."/>
+<meta property="og:image" content="https://dobi-greenscape.vercel.app/images/hero-home.jpg"/>
+<meta property="og:url" content="https://dobi-greenscape.vercel.app/"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%BF%3C/text%3E%3C/svg%3E"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
@@ -66,43 +74,43 @@ tailwind.config = {
   .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
 </style>
 </head>
-<body class="bg-background text-on-surface font-body-md antialiased">
+<body class="bg-background text-on-surface font-body-md antialiased pb-16 md:pb-0">
 <!-- Nav -->
-<nav class="fixed top-0 left-0 w-full flex justify-between items-center px-margin-mobile md:px-margin-desktop py-md max-w-[1280px] mx-auto inset-x-0 bg-surface/90 backdrop-blur-md z-50 shadow-[0_10px_30px_-5px_rgba(21,66,18,0.08)]">
+<nav class="fixed top-0 left-0 w-full flex justify-between items-center px-margin-mobile md:px-margin-desktop py-md max-w-[1280px] mx-auto inset-x-0 bg-surface/90 backdrop-blur-md z-50 shadow-[0_10px_30px_-5px_rgba(21,66,18,0.08)] transition-shadow" id="site-nav">
 <a class="flex items-center gap-2" href="index.html">
 <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">park</span>
 <span class="font-headline-md text-headline-md font-bold text-primary">GreenScape</span>
 </a>
 <div class="hidden md:flex items-center gap-8">
-<a class="text-primary border-b-2 border-secondary pb-1 font-label-md text-label-md" href="index.html">Home</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="services.html">Services</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html#about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html#testimonials">Testimonials</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="gallery.html">Gallery</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="contact.html#faq">FAQ</a>
 </div>
-<a class="hidden md:block bg-secondary-container text-on-secondary-container px-6 py-3 rounded-full font-label-md text-label-md hover:scale-105 transition-transform shadow-sm" href="contact.html">Get Free Estimate</a>
-<button class="md:hidden text-primary" aria-label="Open menu" id="menu-btn">
-<span class="material-symbols-outlined">menu</span>
+<a class="hidden md:flex items-center bg-secondary-container text-on-secondary-container px-6 py-3 rounded-full font-label-md text-label-md hover:scale-105 transition-transform shadow-sm" href="contact.html">Get a Free Estimate</a>
+<button class="md:hidden text-primary" aria-label="Toggle menu" aria-expanded="false" id="menu-btn">
+<span class="material-symbols-outlined" id="menu-icon">menu</span>
 </button>
 </nav>
 <!-- Mobile menu -->
-<div class="hidden fixed top-[72px] left-0 w-full bg-surface z-40 shadow-lg flex-col p-md gap-sm md:hidden" id="mobile-menu">
-<a class="font-label-md text-label-md text-primary py-2" href="index.html">Home</a>
+<div class="hidden fixed top-[76px] left-0 w-full bg-surface z-40 shadow-lg flex-col p-md gap-sm md:hidden" id="mobile-menu">
 <a class="font-label-md text-label-md text-on-surface-variant py-2" href="services.html">Services</a>
 <a class="font-label-md text-label-md text-on-surface-variant py-2" href="index.html#about">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant py-2" href="index.html#testimonials">Testimonials</a>
 <a class="font-label-md text-label-md text-on-surface-variant py-2" href="gallery.html">Gallery</a>
 <a class="font-label-md text-label-md text-on-surface-variant py-2" href="contact.html#faq">FAQ</a>
-<a class="bg-secondary-container text-on-secondary-container text-center px-6 py-3 rounded-full font-label-md text-label-md mt-2" href="contact.html">Get Free Estimate</a>
+<a class="bg-secondary-container text-on-secondary-container text-center px-6 py-3 rounded-full font-label-md text-label-md mt-2" href="contact.html">Get a Free Estimate</a>
 </div>
 <main class="pt-[88px]">
 <!-- Hero Section -->
 <section class="relative h-[700px] flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 w-full h-full bg-cover bg-center" style="background-image: url('images/hero-home.jpg')"</div>
+<div class="absolute inset-0 w-full h-full bg-cover bg-center" style="background-image: url('images/hero-home.jpg')"></div>
 <div class="absolute inset-0 bg-primary/30 backdrop-blur-[1px]"></div>
 <div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto flex flex-col items-center fade-in-up">
 <h1 class="font-headline-xl text-[36px] leading-tight md:text-headline-xl text-on-primary mb-md drop-shadow-md">Greensboro's Friendly Landscape Experts</h1>
 <p class="font-body-lg text-body-lg text-surface-container-low max-w-2xl mb-lg drop-shadow-sm">We're your neighbors helping neighbors create beautiful, healthy outdoor spaces that feel like home.</p>
-<a class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-lg py-4 rounded-lg hover:scale-105 transition-transform duration-200 warm-shadow" href="contact.html">Say Hello &amp; Get a Quote</a>
+<a class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-lg py-4 rounded-lg hover:scale-105 transition-transform duration-200 warm-shadow" href="contact.html">Get a Free Estimate</a>
 </div>
 </section>
 <!-- Neighbor Trust Section -->
@@ -186,7 +194,74 @@ tailwind.config = {
 <h2 class="font-headline-lg text-primary mb-md">Our Greensboro Roots</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-md">We believe a yard should be a place where memories are made. For over 15 years, our team has been helping families right here in Greensboro turn their outdoor spaces into personal retreats.</p>
 <p class="font-body-md text-body-md text-on-surface-variant mb-lg">We're not just experts; we're your neighbors. We understand the local soil, the North Carolina weather, and the value of a job well done with a friendly smile. We're here to help your home shine, one garden bed at a time.</p>
-<a class="inline-block bg-transparent border-2 border-primary text-primary font-label-md text-label-md px-lg py-3 rounded-lg hover:bg-primary/5 transition-colors" href="contact.html">Meet the Team</a>
+<a class="inline-block bg-transparent border-2 border-primary text-primary font-label-md text-label-md px-lg py-3 rounded-lg hover:bg-primary/5 transition-colors" href="#team">Meet the Team</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="py-section-padding bg-background" id="team">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-lg fade-in-up">
+<h2 class="font-headline-lg text-primary mb-md">Meet the Team</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">The friendly faces who'll actually show up at your door.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-md max-w-2xl mx-auto">
+<div class="bg-surface-container-low rounded-xl p-lg text-center warm-shadow border border-outline-variant/30 fade-in-up">
+<img alt="Portrait of Dana Whitfield, owner and lead designer at GreenScape Landscaping." class="w-24 h-24 rounded-full object-cover mx-auto mb-sm" src="images/about-team.jpg"/>
+<h3 class="font-headline-md text-[20px] text-primary mb-xs">Dana Whitfield</h3>
+<p class="font-label-md text-label-sm text-secondary uppercase tracking-wide mb-sm">Owner &amp; Lead Designer</p>
+<p class="font-body-md text-body-md text-on-surface-variant">15 years designing yards across the Triad — still gets excited about a good mulch delivery.</p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-lg text-center warm-shadow border border-outline-variant/30 fade-in-up delay-100">
+<img alt="Portrait of Marcus Reid, lead crew foreman at GreenScape Landscaping." class="w-24 h-24 rounded-full object-cover mx-auto mb-sm" src="images/approach-team.jpg"/>
+<h3 class="font-headline-md text-[20px] text-primary mb-xs">Marcus Reid</h3>
+<p class="font-label-md text-label-sm text-secondary uppercase tracking-wide mb-sm">Crew Foreman</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Knows every inch of red Carolina clay and exactly how to make it grow something beautiful.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-section-padding bg-surface-container-low" id="testimonials">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-lg fade-in-up">
+<h2 class="font-headline-lg text-primary mb-md">Kind Words From the Neighborhood</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Don't just take our word for it.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="bg-surface rounded-xl p-lg border border-outline-variant/30 warm-shadow fade-in-up">
+<div class="flex gap-1 text-secondary mb-sm" aria-label="5 out of 5 stars">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-md">"They transformed our front bed in a single afternoon and it still looks incredible two years later."</p>
+<p class="font-label-md text-label-md text-primary">Maria T. <span class="text-on-surface-variant font-body-md font-normal">— Lindley Park</span></p>
+</div>
+<div class="bg-surface rounded-xl p-lg border border-outline-variant/30 warm-shadow fade-in-up delay-100">
+<div class="flex gap-1 text-secondary mb-sm" aria-label="5 out of 5 stars">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-md">"Showed up on time, did exactly what they quoted, and cleaned up better than we expected. Can't ask for more."</p>
+<p class="font-label-md text-label-md text-primary">James O. <span class="text-on-surface-variant font-body-md font-normal">— Fisher Park</span></p>
+</div>
+<div class="bg-surface rounded-xl p-lg border border-outline-variant/30 warm-shadow fade-in-up delay-200">
+<div class="flex gap-1 text-secondary mb-sm" aria-label="5 out of 5 stars">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-md">"Our new patio is where we spend every summer evening now. Best investment we've made in the house."</p>
+<p class="font-label-md text-label-md text-primary">Priya K. <span class="text-on-surface-variant font-body-md font-normal">— Westerwood</span></p>
 </div>
 </div>
 </div>
@@ -196,7 +271,7 @@ tailwind.config = {
 <div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop text-center fade-in-up">
 <h2 class="font-headline-lg text-on-primary mb-md">Want a Hand with Your Yard?</h2>
 <p class="font-body-lg text-primary-fixed-dim mb-lg">We'd love to stop by, say hi, and chat about how we can make your landscape everything you want it to be.</p>
-<a class="inline-block bg-secondary-container text-on-secondary-container font-label-md text-label-md px-xl py-4 rounded-lg hover:scale-105 transition-transform duration-200 warm-shadow" href="contact.html">Get a Friendly Quote</a>
+<a class="inline-block bg-secondary-container text-on-secondary-container font-label-md text-label-md px-xl py-4 rounded-lg hover:scale-105 transition-transform duration-200 warm-shadow" href="contact.html">Get a Free Estimate</a>
 </div>
 </section>
 </main>
@@ -213,10 +288,10 @@ tailwind.config = {
 <div>
 <h5 class="font-headline-md text-headline-md mb-6">Services</h5>
 <ul class="space-y-3">
-<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html">Lawn Care</a></li>
-<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html">Yard Design</a></li>
-<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html">Stone &amp; Patios</a></li>
-<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html">Tree &amp; Shrub Care</a></li>
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html#lawn-care">Lawn Care</a></li>
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html#yard-design">Yard Design</a></li>
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html#stone-patios">Stone &amp; Patios</a></li>
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="services.html#tree-shrub-care">Tree &amp; Shrub Care</a></li>
 </ul>
 </div>
 <div>
@@ -224,8 +299,8 @@ tailwind.config = {
 <ul class="space-y-3">
 <li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="index.html#about">About Us</a></li>
 <li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="gallery.html">Project Gallery</a></li>
-<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="contact.html#faq">Yard FAQ</a></li>
-<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="contact.html">Contact</a></li>
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="index.html#testimonials">Testimonials</a></li>
+<li><a class="text-on-primary-container hover:text-on-primary transition-colors font-body-md text-body-md" href="contact.html#faq">FAQ</a></li>
 </ul>
 </div>
 <div>
@@ -241,6 +316,35 @@ tailwind.config = {
 © 2024 GreenScape Landscaping. All rights reserved. Locally owned and operated in Greensboro.
 </div>
 </footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "GreenScape Landscaping",
+  "image": "https://dobi-greenscape.vercel.app/images/hero-home.jpg",
+  "telephone": "+1-336-555-0123",
+  "email": "hello@greenscapegso.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Friendly Ave",
+    "addressLocality": "Greensboro",
+    "addressRegion": "NC",
+    "postalCode": "27401",
+    "addressCountry": "US"
+  },
+  "areaServed": "Greensboro, NC",
+  "url": "https://dobi-greenscape.vercel.app/"
+}
+</script>
+<!-- Sticky mobile call bar -->
+<div class="fixed bottom-0 left-0 w-full z-50 md:hidden bg-surface border-t border-outline-variant/30 shadow-[0_-4px_20px_rgba(21,66,18,0.12)] flex">
+<a class="flex-1 flex items-center justify-center gap-2 py-3 text-primary font-label-md text-label-md border-r border-outline-variant/30" href="tel:3365550123">
+<span class="material-symbols-outlined text-[20px]">call</span> Call Now
+</a>
+<a class="flex-1 flex items-center justify-center gap-2 py-3 bg-secondary-container text-on-secondary-container font-label-md text-label-md" href="contact.html#contact-form">
+<span class="material-symbols-outlined text-[20px]">edit_note</span> Get Quote
+</a>
+</div>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver((entries) => {
@@ -251,11 +355,21 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".fade-in-up").forEach((el) => observer.observe(el));
 
   const menuBtn = document.getElementById("menu-btn");
+  const menuIcon = document.getElementById("menu-icon");
   const mobileMenu = document.getElementById("mobile-menu");
   if (menuBtn && mobileMenu) {
     menuBtn.addEventListener("click", () => {
+      const isOpen = mobileMenu.classList.toggle("flex");
       mobileMenu.classList.toggle("hidden");
-      mobileMenu.classList.toggle("flex");
+      menuBtn.setAttribute("aria-expanded", String(isOpen));
+      if (menuIcon) menuIcon.textContent = isOpen ? "close" : "menu";
+    });
+  }
+
+  const siteNav = document.getElementById("site-nav");
+  if (siteNav) {
+    window.addEventListener("scroll", () => {
+      siteNav.classList.toggle("shadow-md", window.scrollY > 20);
     });
   }
 });
