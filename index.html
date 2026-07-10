@@ -48,16 +48,18 @@ tailwind.config = {
         "gutter": "24px", "margin-mobile": "16px", "margin-desktop": "64px", "section-padding": "80px"
       },
       fontFamily: {
-        "headline-xl": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"],
-        "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"],
+        "headline-xl": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"],
+        "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"],
         "body-lg": ["Be Vietnam Pro"], "body-md": ["Be Vietnam Pro"],
         "label-md": ["Be Vietnam Pro"], "label-sm": ["Be Vietnam Pro"]
       },
       fontSize: {
         "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+        "headline-xl-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
         "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
         "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
         "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
         "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
         "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
         "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
@@ -108,7 +110,8 @@ tailwind.config = {
 <div class="absolute inset-0 w-full h-full bg-cover bg-center" style="background-image: url('images/hero-home.jpg')"></div>
 <div class="absolute inset-0 bg-primary/30 backdrop-blur-[1px]"></div>
 <div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto flex flex-col items-center fade-in-up">
-<h1 class="font-headline-xl text-[36px] leading-tight md:text-headline-xl text-on-primary mb-md drop-shadow-md">Greensboro's Friendly Landscape Experts</h1>
+<span class="inline-block font-label-md text-label-md text-white bg-tertiary-fixed/90 px-sm py-xs rounded-full mb-md uppercase tracking-wider">Serving Greensboro &amp; the Triad</span>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile md:font-headline-xl md:text-headline-xl text-on-primary mb-md drop-shadow-md">Greensboro's Friendly Landscape Experts</h1>
 <p class="font-body-lg text-body-lg text-surface-container-low max-w-2xl mb-lg drop-shadow-sm">We're your neighbors helping neighbors create beautiful, healthy outdoor spaces that feel like home.</p>
 <a class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-lg py-4 rounded-lg hover:scale-105 transition-transform duration-200 warm-shadow" href="contact.html">Get a Free Estimate</a>
 </div>
@@ -140,6 +143,7 @@ tailwind.config = {
 <section class="py-section-padding bg-background" id="services">
 <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
 <div class="text-center mb-lg fade-in-up">
+<span class="block font-label-md text-label-sm text-tertiary uppercase tracking-wider mb-sm">What We Offer</span>
 <h2 class="font-headline-lg text-primary mb-md">How We Can Help Your Yard</h2>
 <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">From a quick cleanup to a brand new look, we treat every lawn like it's our own.</p>
 </div>
@@ -154,27 +158,27 @@ tailwind.config = {
 </div>
 <div class="bg-surface rounded-xl p-md border border-outline-variant/30 warm-shadow hover:bg-surface-container-low transition-all duration-300 fade-in-up delay-100 flex flex-col justify-center">
 <span class="material-symbols-outlined text-[32px] text-primary mb-sm">grass</span>
-<h3 class="font-headline-md text-[20px] text-primary mb-xs">Lawn Care</h3>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-xs">Lawn Care</h3>
 <p class="font-body-md text-on-surface-variant">Keep your grass green and healthy with our regular mowing and care visits.</p>
 </div>
 <div class="bg-surface rounded-xl p-md border border-outline-variant/30 warm-shadow hover:bg-surface-container-low transition-all duration-300 fade-in-up delay-200 flex flex-col justify-center">
 <span class="material-symbols-outlined text-[32px] text-tertiary mb-sm">forest</span>
-<h3 class="font-headline-md text-[20px] text-primary mb-xs">Fresh Mulch</h3>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-xs">Fresh Mulch</h3>
 <p class="font-body-md text-on-surface-variant">We'll lay down fresh, organic mulch to keep your beds tidy and your plants happy.</p>
 </div>
 <div class="bg-surface rounded-xl p-md border border-outline-variant/30 warm-shadow hover:bg-surface-container-low transition-all duration-300 fade-in-up flex flex-col justify-center">
 <span class="material-symbols-outlined text-[32px] text-primary mb-sm">nature_people</span>
-<h3 class="font-headline-md text-[20px] text-primary mb-xs">Tree &amp; Shrub Care</h3>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-xs">Tree &amp; Shrub Care</h3>
 <p class="font-body-md text-on-surface-variant">Expert pruning to keep your trees strong and your bushes looking their best.</p>
 </div>
 <div class="bg-surface rounded-xl p-md border border-outline-variant/30 warm-shadow hover:bg-surface-container-low transition-all duration-300 fade-in-up delay-100 flex flex-col justify-center">
 <span class="material-symbols-outlined text-[32px] text-tertiary mb-sm">potted_plant</span>
-<h3 class="font-headline-md text-[20px] text-primary mb-xs">Stone &amp; Patios</h3>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-xs">Stone &amp; Patios</h3>
 <p class="font-body-md text-on-surface-variant">Building cozy walkways and patios for those lovely Greensboro evenings outside.</p>
 </div>
 <div class="bg-surface rounded-xl p-md border border-outline-variant/30 warm-shadow hover:bg-surface-container-low transition-all duration-300 fade-in-up delay-200 flex flex-col justify-center">
 <span class="material-symbols-outlined text-[32px] text-primary mb-sm">filter_vintage</span>
-<h3 class="font-headline-md text-[20px] text-primary mb-xs">Seasonal Tidy-Up</h3>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-xs">Seasonal Tidy-Up</h3>
 <p class="font-body-md text-on-surface-variant">Spring or Fall, we'll help get your yard ready for the changing seasons.</p>
 </div>
 </div>
@@ -184,13 +188,14 @@ tailwind.config = {
 </div>
 </section>
 <!-- About Section -->
-<section class="py-section-padding bg-surface-container-low" id="about">
+<section class="py-section-padding bg-surface-container" id="about">
 <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
 <div class="flex flex-col md:flex-row gap-lg items-center">
 <div class="w-full md:w-1/2 fade-in-up">
 <img alt="A friendly landscape team member smiling while working in a neighborhood garden." class="rounded-xl object-cover w-full h-[450px] warm-shadow" src="images/about-team.jpg"/>
 </div>
 <div class="w-full md:w-1/2 fade-in-up delay-100">
+<span class="block font-label-md text-label-sm text-tertiary uppercase tracking-wider mb-sm">Our Story</span>
 <h2 class="font-headline-lg text-primary mb-md">Our Greensboro Roots</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-md">We believe a yard should be a place where memories are made. For over 15 years, our team has been helping families right here in Greensboro turn their outdoor spaces into personal retreats.</p>
 <p class="font-body-md text-body-md text-on-surface-variant mb-lg">We're not just experts; we're your neighbors. We understand the local soil, the North Carolina weather, and the value of a job well done with a friendly smile. We're here to help your home shine, one garden bed at a time.</p>
@@ -203,19 +208,20 @@ tailwind.config = {
 <section class="py-section-padding bg-background" id="team">
 <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
 <div class="text-center mb-lg fade-in-up">
+<span class="block font-label-md text-label-sm text-tertiary uppercase tracking-wider mb-sm">Our People</span>
 <h2 class="font-headline-lg text-primary mb-md">Meet the Team</h2>
 <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">The friendly faces who'll actually show up at your door.</p>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-md max-w-2xl mx-auto">
-<div class="bg-surface-container-low rounded-xl p-lg text-center warm-shadow border border-outline-variant/30 fade-in-up">
+<div class="bg-surface-container-lowest rounded-xl p-lg text-center warm-shadow border border-outline-variant/30 fade-in-up">
 <img alt="Portrait of Dana Whitfield, owner and lead designer at GreenScape Landscaping." class="w-24 h-24 rounded-full object-cover mx-auto mb-sm" src="images/about-team.jpg"/>
-<h3 class="font-headline-md text-[20px] text-primary mb-xs">Dana Whitfield</h3>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-xs">Dana Whitfield</h3>
 <p class="font-label-md text-label-sm text-secondary uppercase tracking-wide mb-sm">Owner &amp; Lead Designer</p>
 <p class="font-body-md text-body-md text-on-surface-variant">15 years designing yards across the Triad — still gets excited about a good mulch delivery.</p>
 </div>
-<div class="bg-surface-container-low rounded-xl p-lg text-center warm-shadow border border-outline-variant/30 fade-in-up delay-100">
+<div class="bg-surface-container-lowest rounded-xl p-lg text-center warm-shadow border border-outline-variant/30 fade-in-up delay-100">
 <img alt="Portrait of Marcus Reid, lead crew foreman at GreenScape Landscaping." class="w-24 h-24 rounded-full object-cover mx-auto mb-sm" src="images/approach-team.jpg"/>
-<h3 class="font-headline-md text-[20px] text-primary mb-xs">Marcus Reid</h3>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-xs">Marcus Reid</h3>
 <p class="font-label-md text-label-sm text-secondary uppercase tracking-wide mb-sm">Crew Foreman</p>
 <p class="font-body-md text-body-md text-on-surface-variant">Knows every inch of red Carolina clay and exactly how to make it grow something beautiful.</p>
 </div>
@@ -223,9 +229,10 @@ tailwind.config = {
 </div>
 </section>
 <!-- Testimonials Section -->
-<section class="py-section-padding bg-surface-container-low" id="testimonials">
+<section class="py-section-padding bg-surface-container" id="testimonials">
 <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
 <div class="text-center mb-lg fade-in-up">
+<span class="block font-label-md text-label-sm text-tertiary uppercase tracking-wider mb-sm">Reviews</span>
 <h2 class="font-headline-lg text-primary mb-md">Kind Words From the Neighborhood</h2>
 <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Don't just take our word for it.</p>
 </div>

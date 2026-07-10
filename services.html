@@ -48,16 +48,18 @@ tailwind.config = {
         "gutter": "24px", "margin-mobile": "16px", "margin-desktop": "64px", "section-padding": "80px"
       },
       fontFamily: {
-        "headline-xl": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"],
-        "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"],
+        "headline-xl": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"],
+        "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"],
         "body-lg": ["Be Vietnam Pro"], "body-md": ["Be Vietnam Pro"],
         "label-md": ["Be Vietnam Pro"], "label-sm": ["Be Vietnam Pro"]
       },
       fontSize: {
         "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+        "headline-xl-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
         "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
         "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
         "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
         "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
         "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
         "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
@@ -105,8 +107,8 @@ tailwind.config = {
 <section class="relative overflow-hidden bg-surface py-xl">
 <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
 <div class="z-10">
-<span class="inline-block font-label-md text-label-md text-secondary bg-secondary-fixed/30 px-sm py-xs rounded-full mb-md uppercase tracking-wider">Our Greensboro Community</span>
-<h1 class="font-headline-xl text-headline-xl text-primary mb-md">How We Can Help Your Yard Flourish</h1>
+<span class="inline-block font-label-md text-label-md text-tertiary bg-tertiary-fixed/30 px-sm py-xs rounded-full mb-md uppercase tracking-wider">Our Greensboro Community</span>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile md:font-headline-xl md:text-headline-xl text-primary mb-md">How We Can Help Your Yard Flourish</h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-lg">
 We aren't just landscapers; we're your Greensboro neighbors. From Lindley Park to Fisher Park, we partner with you to create outdoor spaces that feel like home.
 </p>
@@ -123,9 +125,10 @@ We aren't just landscapers; we're your Greensboro neighbors. From Lindley Park t
 <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-primary-fixed/20 rounded-full blur-3xl opacity-50"></div>
 </section>
 <!-- Service Grid Section -->
-<section class="py-xl bg-surface-container-low" id="service-grid">
+<section class="py-xl bg-surface-container" id="service-grid">
 <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
 <div class="text-center mb-xl">
+<span class="block font-label-md text-label-sm text-tertiary uppercase tracking-wider mb-sm">Our Services</span>
 <h2 class="font-headline-lg text-headline-lg text-primary mb-md">Tailored Care for Every Corner</h2>
 <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
 Whether you need a weekly trim or a complete garden transformation, we bring expert hands and a neighborly smile to every job.
@@ -195,12 +198,13 @@ Health checks and pruning to keep your oaks, dogwoods, and azaleas healthy throu
 <div class="aspect-square rounded-2xl overflow-hidden shadow-lg border-8 border-surface">
 <img alt="A friendly landscaping professional in a clean GreenScape uniform conversing with a homeowner in a sunlit Greensboro garden." class="w-full h-full object-cover" src="images/approach-team.jpg"/>
 </div>
-<div class="absolute -top-6 -right-6 bg-secondary-fixed text-on-secondary-fixed p-md rounded-xl shadow-lg hidden md:block">
+<div class="absolute -top-6 -right-6 bg-tertiary-fixed text-on-tertiary-fixed p-md rounded-xl shadow-lg hidden md:block">
 <p class="font-headline-md text-headline-md mb-xs">15+</p>
 <p class="font-label-md text-label-md">Years in NC</p>
 </div>
 </div>
 <div class="w-full md:w-1/2">
+<span class="block font-label-md text-label-sm text-tertiary uppercase tracking-wider mb-sm">Our Approach</span>
 <h2 class="font-headline-lg text-headline-lg text-primary mb-md">The Neighborly Way</h2>
 <p class="font-body-lg text-body-lg text-on-surface mb-lg italic">
 "We don't just work on your yard; we care for the community we share."
