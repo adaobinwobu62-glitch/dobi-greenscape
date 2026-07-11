@@ -123,21 +123,21 @@ Say hello and tell us about your outdoor space. We'll stop by, take a walk aroun
 <input type="hidden" name="_captcha" value="false"/>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
 <div class="space-y-2">
-<label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider">Full Name</label>
-<input required class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" placeholder="Jane Doe" type="text" name="name"/>
+<label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider" for="quote-name">Full Name</label>
+<input required class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" placeholder="Jane Doe" type="text" name="name" id="quote-name"/>
 </div>
 <div class="space-y-2">
-<label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider">Phone Number</label>
-<input class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" placeholder="(336) 555-0123" type="tel" name="phone"/>
+<label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider" for="quote-phone">Phone Number</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" placeholder="(336) 555-0123" type="tel" name="phone" id="quote-phone"/>
 </div>
 </div>
 <div class="space-y-2">
-<label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider">Email Address</label>
-<input required class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" placeholder="jane@example.com" type="email" name="email"/>
+<label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider" for="quote-email">Email Address</label>
+<input required class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" placeholder="jane@example.com" type="email" name="email" id="quote-email"/>
 </div>
 <div class="space-y-2">
-<label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider">What do you need help with?</label>
-<select class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" name="service">
+<label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider" for="quote-service">What do you need help with?</label>
+<select class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary py-3 px-4 transition-colors font-body-md text-body-md" name="service" id="quote-service">
 <option>Lawn Care</option>
 <option>Yard Design</option>
 <option>Stone &amp; Patios</option>
@@ -147,8 +147,8 @@ Say hello and tell us about your outdoor space. We'll stop by, take a walk aroun
 </select>
 </div>
 <div class="space-y-2">
-<label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider">Tell Us About Your Yard</label>
-<textarea class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary p-4 transition-colors font-body-md text-body-md resize-none" placeholder="What's your outdoor space like, and what are you dreaming up?" rows="4" name="message"></textarea>
+<label class="font-label-md text-label-sm text-on-surface-variant uppercase tracking-wider" for="quote-message">Tell Us About Your Yard</label>
+<textarea class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg focus:border-secondary focus:ring-secondary p-4 transition-colors font-body-md text-body-md resize-none" placeholder="What's your outdoor space like, and what are you dreaming up?" rows="4" name="message" id="quote-message"></textarea>
 </div>
 <button class="w-full bg-secondary-container text-on-secondary-container font-label-md text-label-md py-4 rounded-lg hover:scale-[1.01] transition-transform mt-md flex items-center justify-center gap-2" type="submit" id="quote-form-submit">
 <span id="quote-form-submit-label">Send It Over</span> <span class="material-symbols-outlined text-sm">arrow_forward</span>
@@ -203,7 +203,7 @@ Say hello and tell us about your outdoor space. We'll stop by, take a walk aroun
 <span class="block font-label-md text-label-sm text-tertiary uppercase tracking-wider mb-sm">Got Questions?</span>
 <h2 class="font-headline-lg text-headline-lg text-primary mb-lg">Frequently Asked Questions</h2>
 <div class="faq-item border-b border-outline-variant/30 py-4">
-<button class="w-full flex justify-between items-center text-left focus:outline-none group faq-toggle">
+<button class="w-full flex justify-between items-center text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:rounded-sm group faq-toggle">
 <span class="font-body-lg text-body-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Do you offer free estimates?</span>
 <span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors faq-icon">add</span>
 </button>
@@ -212,7 +212,7 @@ Say hello and tell us about your outdoor space. We'll stop by, take a walk aroun
 </div>
 </div>
 <div class="faq-item border-b border-outline-variant/30 py-4">
-<button class="w-full flex justify-between items-center text-left focus:outline-none group faq-toggle">
+<button class="w-full flex justify-between items-center text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:rounded-sm group faq-toggle">
 <span class="font-body-lg text-body-lg font-semibold text-on-surface group-hover:text-primary transition-colors">How soon can you start?</span>
 <span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors faq-icon">add</span>
 </button>
@@ -221,7 +221,7 @@ Say hello and tell us about your outdoor space. We'll stop by, take a walk aroun
 </div>
 </div>
 <div class="faq-item border-b border-outline-variant/30 py-4">
-<button class="w-full flex justify-between items-center text-left focus:outline-none group faq-toggle">
+<button class="w-full flex justify-between items-center text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:rounded-sm group faq-toggle">
 <span class="font-body-lg text-body-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Are you licensed and insured in North Carolina?</span>
 <span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors faq-icon">add</span>
 </button>
@@ -230,7 +230,7 @@ Say hello and tell us about your outdoor space. We'll stop by, take a walk aroun
 </div>
 </div>
 <div class="faq-item border-b border-outline-variant/30 py-4">
-<button class="w-full flex justify-between items-center text-left focus:outline-none group faq-toggle">
+<button class="w-full flex justify-between items-center text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:rounded-sm group faq-toggle">
 <span class="font-body-lg text-body-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Do you handle both design and ongoing care?</span>
 <span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors faq-icon">add</span>
 </button>

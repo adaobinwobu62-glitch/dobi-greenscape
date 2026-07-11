@@ -88,13 +88,19 @@ This is a **demo**, so the following are expected placeholders — listed here
 so they're not forgotten if this project is ever adapted into someone's
 actual live client site:
 
-- ❌ **Contact form has no backend.** Submitting does nothing. Needs a form
-  service or serverless function before this pattern ships to a real client.
+- ✅ **Contact form has a real backend.** Both the contact-page form and the
+  homepage quote form POST to FormSubmit
+  (`https://formsubmit.co/ajax/adaobinwobu62@gmail.com`), with a JS handler
+  that shows inline success/error state instead of a page reload. Before
+  handing this off as a real client site, swap the destination address to
+  the client's own inbox — right now every submission lands in the demo
+  owner's personal email.
 - ❌ **All contact info is fake** (`(336) 555-0123`, `123 Friendly Ave`,
   `hello@greenscapegso.com`) — placeholders only, not to be used as-is.
-- ❌ **No testimonials section exists**, despite the trust-stat "200+ Happy
-  Friends & Families" appearing on the homepage — exactly the kind of
-  unsupported-claim mismatch flagged above.
+- ✅ **Testimonials section exists** (`index.html#testimonials`, linked from
+  nav on every page) — 3 named reviews with neighborhood/rating, which is
+  what backs the "200+ Happy Friends & Families" stat. No longer an
+  unsupported-claim mismatch.
 - ❌ **No analytics installed.**
 - ❌ **No "Designed by" credit or lead-gen CTA pointing back to the site's
   actual owner** — since this demo's purpose is to win the owner new
@@ -103,3 +109,9 @@ actual live client site:
   state).
 - ✅ Images are self-hosted (fixed from hotlinking a temporary preview CDN).
 - ✅ FAQ accordion, mobile nav, and tap-to-call links are functional.
+- ✅ Contact page has a real embedded Google Map (fixed from a blank
+  placeholder box).
+- ✅ Form labels are programmatically associated with their inputs
+  (`id`/`for` pairs) and FAQ accordion buttons have a visible focus state —
+  both were silent screen-reader/keyboard-nav gaps, fixed in an
+  accessibility pass.
