@@ -127,9 +127,9 @@ per the palette formula above.
 
 ### Typography
 
-- **Headlines:** Plus Jakarta Sans (600–800 weight) — rounded terminals,
+- **Headlines:** Baloo 2 (600–800 weight) — rounded, hand-lettered warmth,
   friendly rather than authoritative.
-- **Body/labels:** Be Vietnam Pro (400–600 weight).
+- **Body/labels:** Work Sans (400–600 weight).
 
 ### Shape & Spacing
 
